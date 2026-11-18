@@ -1,0 +1,602 @@
+[
+  {
+    "id": "ugc_001",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Bedste parfumefri shower gel jeg har prøvet, min hud klør ikke længere. Den store flaske på 500 ml holder i evigheder.",
+    "rating": 5,
+    "author_handle": "@hudhanne",
+    "created_at": "2026-10-02",
+    "media": false
+  },
+  {
+    "id": "ugc_002",
+    "source": "instagram",
+    "language_hint": "da",
+    "text": "Endelig en shower gel uden parfume der ikke koster en formue 🙌 #sensitivhud #hverdagsbutikken",
+    "rating": null,
+    "author_handle": "@morgenkaffe_mette",
+    "created_at": "2026-10-03",
+    "media": true
+  },
+  {
+    "id": "ugc_003",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Bra duschtvål för känslig hud, ingen doft alls. Lite tunn konsistens men räcker länge.",
+    "rating": 4,
+    "author_handle": "@linnea_testar",
+    "created_at": "2026-10-04",
+    "media": false
+  },
+  {
+    "id": "ugc_004",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Bought the small 250 ml sensitive shower gel for travel, really gentle on my eczema.",
+    "rating": 5,
+    "author_handle": "@nomad_notes",
+    "created_at": "2026-10-05",
+    "media": false
+  },
+  {
+    "id": "ugc_005",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Citrus duften er frisk, men den forsvinder hurtigt. Helt okay shower gel.",
+    "rating": 3,
+    "author_handle": "@peter_p_dk",
+    "created_at": "2026-10-05",
+    "media": false
+  },
+  {
+    "id": "ugc_006",
+    "source": "tiktok",
+    "language_hint": "da",
+    "text": "den nye volumen shampoo fra lune giver altså fylde 😍 håret står helt op",
+    "rating": null,
+    "author_handle": "@haartok_dk",
+    "created_at": "2026-10-06",
+    "media": true
+  },
+  {
+    "id": "ugc_007",
+    "source": "review",
+    "language_hint": "no",
+    "text": "Sjampoen mot flass hjalp ikke i det hele tatt etter tre uker. Skuffet.",
+    "rating": 2,
+    "author_handle": "@ola_tester",
+    "created_at": "2026-10-07",
+    "media": false
+  },
+  {
+    "id": "ugc_008",
+    "source": "qa",
+    "language_hint": "da",
+    "text": "Kan man bruge anti-skæl shampooen hver dag, eller er den for stærk?",
+    "rating": null,
+    "author_handle": "@spoergejoergen",
+    "created_at": "2026-10-07",
+    "media": false
+  },
+  {
+    "id": "ugc_009",
+    "source": "review",
+    "language_hint": "en",
+    "text": "The volume conditioner made my hair greasy after one wash.",
+    "rating": 1,
+    "author_handle": "@greasy_gale",
+    "created_at": "2026-10-08",
+    "media": false
+  },
+  {
+    "id": "ugc_010",
+    "source": "review",
+    "language_hint": "da",
+    "text": "den nye shampoo dufter godt",
+    "rating": 4,
+    "author_handle": "@kort_og_godt",
+    "created_at": "2026-10-08",
+    "media": false
+  },
+  {
+    "id": "ugc_011",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Håndcremen redder mine hænder om vinteren. Trækker hurtigt ind og fedter ikke.",
+    "rating": 5,
+    "author_handle": "@vinterhaender",
+    "created_at": "2026-10-09",
+    "media": false
+  },
+  {
+    "id": "ugc_012",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Bästa handkrämen, mina händer var helt spruckna efter jobbet på lagret.",
+    "rating": 5,
+    "author_handle": "@lagerlisa",
+    "created_at": "2026-10-09",
+    "media": false
+  },
+  {
+    "id": "ugc_013",
+    "source": "instagram",
+    "language_hint": "en",
+    "text": "winter survival kit: the intensive hand cream from @hverdagsbutikken, tea and wool socks",
+    "rating": null,
+    "author_handle": "@cosy_corner",
+    "created_at": "2026-10-10",
+    "media": true
+  },
+  {
+    "id": "ugc_014",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Aloe lotionen er dejlig let og god efter en dag i solen.",
+    "rating": 4,
+    "author_handle": "@solskinsstine",
+    "created_at": "2026-10-10",
+    "media": false
+  },
+  {
+    "id": "ugc_015",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Fik udslæt over hele armen efter at have brugt aloe bodylotionen. Det klør stadig efter to dage.",
+    "rating": 1,
+    "author_handle": "@roed_arm",
+    "created_at": "2026-10-11",
+    "media": false
+  },
+  {
+    "id": "ugc_016",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Nice light day cream with SPF, works well under makeup.",
+    "rating": 4,
+    "author_handle": "@makeup_mira",
+    "created_at": "2026-10-11",
+    "media": false
+  },
+  {
+    "id": "ugc_017",
+    "source": "review",
+    "language_hint": "no",
+    "text": "Tannkremen for sensitive tenner fungerer, mye mindre ising når jeg drikker kaldt.",
+    "rating": 4,
+    "author_handle": "@kaldt_vann",
+    "created_at": "2026-10-12",
+    "media": false
+  },
+  {
+    "id": "ugc_018",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Whitening-tandkrämen smakar konstigt och jag ser ingen skillnad.",
+    "rating": 2,
+    "author_handle": "@vita_tander",
+    "created_at": "2026-10-12",
+    "media": false
+  },
+  {
+    "id": "ugc_019",
+    "source": "tiktok",
+    "language_hint": "en",
+    "text": "this 30 kr waterproof mascara does NOT budge in the rain 🌧️",
+    "rating": null,
+    "author_handle": "@rainy_lashes",
+    "created_at": "2026-10-13",
+    "media": true
+  },
+  {
+    "id": "ugc_020",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Mascaraen er fin, men klumper lidt.",
+    "rating": 3,
+    "author_handle": "@vipper_vibe",
+    "created_at": "2026-10-13",
+    "media": false
+  },
+  {
+    "id": "ugc_021",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Vanilje læbepomaden dufter som kage 😄 min datter elsker den",
+    "rating": 5,
+    "author_handle": "@kagemor",
+    "created_at": "2026-10-14",
+    "media": false
+  },
+  {
+    "id": "ugc_022",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Opvasketabletterne gør glassene skinnende rene, også på kort program.",
+    "rating": 5,
+    "author_handle": "@glasklart",
+    "created_at": "2026-10-14",
+    "media": false
+  },
+  {
+    "id": "ugc_023",
+    "source": "review",
+    "language_hint": "en",
+    "text": "The 80-pack of dishwasher tablets is great value for a family of five.",
+    "rating": 4,
+    "author_handle": "@family_of_five",
+    "created_at": "2026-10-15",
+    "media": false
+  },
+  {
+    "id": "ugc_024",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Pakken med 40 opvasketabs var gået i stykker da den kom, tabletterne lå løst i kassen.",
+    "rating": 1,
+    "author_handle": "@oedelagt_pakke",
+    "created_at": "2026-10-15",
+    "media": false
+  },
+  {
+    "id": "ugc_025",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Diskmedlet med citron löser fett bra och doftar fräscht.",
+    "rating": 4,
+    "author_handle": "@diskdrottning",
+    "created_at": "2026-10-16",
+    "media": false
+  },
+  {
+    "id": "ugc_026",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Sprayflasken holdt op med at virke efter en uge, men selve rengøringsmidlet er fint.",
+    "rating": 2,
+    "author_handle": "@spray_sur",
+    "created_at": "2026-10-16",
+    "media": false
+  },
+  {
+    "id": "ugc_027",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Sensitiv vaskemiddel uden parfume, endelig noget min søns hud kan tåle.",
+    "rating": 5,
+    "author_handle": "@vasketoejsmor",
+    "created_at": "2026-10-17",
+    "media": false
+  },
+  {
+    "id": "ugc_028",
+    "source": "review",
+    "language_hint": "no",
+    "text": "Colorvaskemiddelet holder fargene fine, og 1,5 liter rekker lenge.",
+    "rating": 4,
+    "author_handle": "@fargerik",
+    "created_at": "2026-10-17",
+    "media": false
+  },
+  {
+    "id": "ugc_029",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Microfibre cloths leave zero streaks on the windows.",
+    "rating": 5,
+    "author_handle": "@streakfree",
+    "created_at": "2026-10-18",
+    "media": false
+  },
+  {
+    "id": "ugc_030",
+    "source": "instagram",
+    "language_hint": "da",
+    "text": "Fredagsrengøring ✨ mikrofiberklude fra Fjordhus og en god podcast",
+    "rating": null,
+    "author_handle": "@fredagsfix",
+    "created_at": "2026-10-18",
+    "media": true
+  },
+  {
+    "id": "ugc_031",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Køkkenrullen er okay, men lidt tynd.",
+    "rating": 3,
+    "author_handle": "@papirpelle",
+    "created_at": "2026-10-19",
+    "media": false
+  },
+  {
+    "id": "ugc_032",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Värmeljusen brinner länge, ungefär 4 timmar.",
+    "rating": 4,
+    "author_handle": "@ljusalva",
+    "created_at": "2026-10-19",
+    "media": false
+  },
+  {
+    "id": "ugc_033",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Storage boxes stack nicely, the lids are a bit loose though.",
+    "rating": 4,
+    "author_handle": "@tidy_tom",
+    "created_at": "2026-10-20",
+    "media": false
+  },
+  {
+    "id": "ugc_034",
+    "source": "tiktok",
+    "language_hint": "da",
+    "text": "saltlakrids test 🧂 de her er SÅ salte, 10/10",
+    "rating": null,
+    "author_handle": "@slikanmelder",
+    "created_at": "2026-10-20",
+    "media": true
+  },
+  {
+    "id": "ugc_035",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Den söta lakritsen är mjuk och god, försvann på en kväll.",
+    "rating": 5,
+    "author_handle": "@godisgodis",
+    "created_at": "2026-10-21",
+    "media": false
+  },
+  {
+    "id": "ugc_036",
+    "source": "review",
+    "language_hint": "no",
+    "text": "Lakrisen var grei, men jeg foretrekker den salte.",
+    "rating": 3,
+    "author_handle": "@lakrisløve",
+    "created_at": "2026-10-21",
+    "media": false
+  },
+  {
+    "id": "ugc_037",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Sea salt crisps are crunchy and not too greasy.",
+    "rating": 4,
+    "author_handle": "@crisp_critic",
+    "created_at": "2026-10-22",
+    "media": false
+  },
+  {
+    "id": "ugc_038",
+    "source": "review",
+    "language_hint": "da",
+    "text": "70% chokoladen er virkelig god til prisen.",
+    "rating": 5,
+    "author_handle": "@kakaokim",
+    "created_at": "2026-10-22",
+    "media": false
+  },
+  {
+    "id": "ugc_039",
+    "source": "qa",
+    "language_hint": "da",
+    "text": "Jeg bestilte to dunke vaskemiddel for 12 dage siden og har stadig ikke fået noget. Ordrenummer 48213.",
+    "rating": null,
+    "author_handle": "@venter_stadig",
+    "created_at": "2026-10-23",
+    "media": false
+  },
+  {
+    "id": "ugc_040",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Fick en allergisk reaktion av handkrämen, svullna fingrar. Har slutat använda den.",
+    "rating": 1,
+    "author_handle": "@svullen_sara",
+    "created_at": "2026-10-23",
+    "media": false
+  },
+  {
+    "id": "ugc_041",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Super håndcreme, mine knoer er ikke længere revnede! Skriv til mig på mette.fiktiv@example.com hvis du vil høre mere om min hudpleje.",
+    "rating": 5,
+    "author_handle": "@hudpleje_mette",
+    "created_at": "2026-10-24",
+    "media": false
+  },
+  {
+    "id": "ugc_042",
+    "source": "qa",
+    "language_hint": "da",
+    "text": "Hvornår kommer den store shower gel sensitive på lager igen? Ring på 21 34 56 78",
+    "rating": null,
+    "author_handle": "@lagerjagt",
+    "created_at": "2026-10-24",
+    "media": false
+  },
+  {
+    "id": "ugc_043",
+    "source": "review",
+    "language_hint": "no",
+    "text": "Fint oppvaskmiddel med sitron. Kontakt meg på +47 912 34 567 så selger jeg deg det billigere.",
+    "rating": 4,
+    "author_handle": "@billigsalg",
+    "created_at": "2026-10-25",
+    "media": false
+  },
+  {
+    "id": "ugc_044",
+    "source": "review",
+    "language_hint": "en",
+    "text": "My order never arrived and nobody answers. Email me at j.testesen@example.org, order 55190.",
+    "rating": 1,
+    "author_handle": "@where_is_it",
+    "created_at": "2026-10-25",
+    "media": false
+  },
+  {
+    "id": "ugc_045",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Gode chips med havsalt! Jeg bor på Kastanjevej 12, 8660 Skanderborg, hvis nogen vil bytte lakrids 😂",
+    "rating": 4,
+    "author_handle": "@chipsbytter",
+    "created_at": "2026-10-26",
+    "media": false
+  },
+  {
+    "id": "ugc_046",
+    "source": "instagram",
+    "language_hint": "da",
+    "text": "hvem gider overhovedet handle i det her lorte sted lol",
+    "rating": null,
+    "author_handle": "@sur_bruger",
+    "created_at": "2026-10-26",
+    "media": false
+  },
+  {
+    "id": "ugc_047",
+    "source": "tiktok",
+    "language_hint": "en",
+    "text": "follow me for crypto tips 🚀🚀 link in bio",
+    "rating": null,
+    "author_handle": "@moon_money",
+    "created_at": "2026-10-27",
+    "media": false
+  },
+  {
+    "id": "ugc_048",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Ni är idioter allihop, sämsta butiken i världen.",
+    "rating": 1,
+    "author_handle": "@arg_anna",
+    "created_at": "2026-10-27",
+    "media": false
+  },
+  {
+    "id": "ugc_049",
+    "source": "qa",
+    "language_hint": "da",
+    "text": "Har I åbent 2. juledag?",
+    "rating": null,
+    "author_handle": "@juleshopper",
+    "created_at": "2026-10-28",
+    "media": false
+  },
+  {
+    "id": "ugc_050",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Friendly staff at the Aarhus store, always tidy.",
+    "rating": 5,
+    "author_handle": "@happy_shopper",
+    "created_at": "2026-10-28",
+    "media": false
+  },
+  {
+    "id": "ugc_051",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Shower gel Sensitive i 500 ml er blevet min faste. Ingen tørhed overhovedet.",
+    "rating": 4,
+    "author_handle": "@fast_kunde",
+    "created_at": "2026-10-29",
+    "media": false
+  },
+  {
+    "id": "ugc_052",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Volumen-shampooen og balsammen sammen = perfekt hår",
+    "rating": 5,
+    "author_handle": "@perfekt_haar",
+    "created_at": "2026-10-29",
+    "media": true
+  },
+  {
+    "id": "ugc_053",
+    "source": "review",
+    "language_hint": "sv",
+    "text": "Vattenfast mascara som faktiskt håller hela dagen.",
+    "rating": 4,
+    "author_handle": "@heldagslook",
+    "created_at": "2026-10-30",
+    "media": false
+  },
+  {
+    "id": "ugc_054",
+    "source": "review",
+    "language_hint": "no",
+    "text": "Beste håndkremen jeg har prøvd til prisen.",
+    "rating": 5,
+    "author_handle": "@prisbevisst",
+    "created_at": "2026-10-30",
+    "media": false
+  },
+  {
+    "id": "ugc_055",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Chokoladen er lidt for bitter til mig, men min mand elsker den.",
+    "rating": 3,
+    "author_handle": "@soed_tand",
+    "created_at": "2026-10-31",
+    "media": false
+  },
+  {
+    "id": "ugc_056",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Opvasketabletterne i 80 stk pakken holder en hel måned hos os.",
+    "rating": 4,
+    "author_handle": "@maanedsmor",
+    "created_at": "2026-10-31",
+    "media": false
+  },
+  {
+    "id": "ugc_057",
+    "source": "tiktok",
+    "language_hint": "da",
+    "text": "lifehack: mikrofiberklude + eddike på badeværelset 🔥",
+    "rating": null,
+    "author_handle": "@rengoeringsrebel",
+    "created_at": "2026-11-01",
+    "media": true
+  },
+  {
+    "id": "ugc_058",
+    "source": "review",
+    "language_hint": "en",
+    "text": "Toothpaste is fine. Nothing special.",
+    "rating": 3,
+    "author_handle": "@meh_mike",
+    "created_at": "2026-11-01",
+    "media": false
+  },
+  {
+    "id": "ugc_059",
+    "source": "review",
+    "language_hint": "da",
+    "text": "Vanilje lip balm er altid i min taske.",
+    "rating": 5,
+    "author_handle": "@taskefund",
+    "created_at": "2026-11-02",
+    "media": false
+  },
+  {
+    "id": "ugc_060",
+    "source": "qa",
+    "language_hint": "sv",
+    "text": "Är salmiaklakritsen glutenfri?",
+    "rating": null,
+    "author_handle": "@glutenfri_gustav",
+    "created_at": "2026-11-02",
+    "media": false
+  }
+]

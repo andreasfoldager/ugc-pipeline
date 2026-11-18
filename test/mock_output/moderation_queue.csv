@@ -1,0 +1,15 @@
+﻿id,queue_reason,moderation,moderation_reason,suggested_sku,match_confidence,match_reason,contains_pii,guardrails,problems,source,author_handle,created_at,text
+ugc_010,needs_human_match,approve,,HB-10310,0.45,mock match to HB-10310,FALSE,,,review,@kort_og_godt,2026-10-08,den nye shampoo dufter godt
+ugc_012,needs_human_match,approve,,,0,mock match to HB-10402,FALSE,"invented SKU ""HB-99999"" removed",,review,@lagerlisa,2026-10-09,"Bästa handkrämen, mina händer var helt spruckna efter jobbet på lagret."
+ugc_020,needs_human_match,approve,,HB-10501,0.45,mock match to HB-10501,FALSE,,,review,@vipper_vibe,2026-10-13,"Mascaraen er fin, men klumper lidt."
+ugc_036,needs_human_match,approve,,HB-40102,0.45,mock match to HB-40102,FALSE,,,review,@lakrisløve,2026-10-21,"Lakrisen var grei, men jeg foretrekker den salte."
+ugc_041,review,review,contains personal data,HB-10402,0.93,mock match to HB-10402,TRUE,,,review,@hudpleje_mette,2026-10-24,"Super håndcreme, mine knoer er ikke længere revnede! Skriv til mig på mette.fiktiv@example.com hvis du vil høre mere om min hudpleje."
+ugc_042,review,review,contains personal data,HB-10234,0.93,mock match to HB-10234,TRUE,,,qa,@lagerjagt,2026-10-24,Hvornår kommer den store shower gel sensitive på lager igen? Ring på 21 34 56 78
+ugc_043,review,review,contains personal data,HB-20110,0.93,mock match to HB-20110,TRUE,,,review,@billigsalg,2026-10-25,Fint oppvaskmiddel med sitron. Kontakt meg på +47 912 34 567 så selger jeg deg det billigere.
+ugc_045,review,review,contains personal data,HB-40110,0.93,mock match to HB-40110,TRUE,,,review,@chipsbytter,2026-10-26,"Gode chips med havsalt! Jeg bor på Kastanjevej 12, 8660 Skanderborg, hvis nogen vil bytte lakrids 😂"
+ugc_046,rejected,reject,abusive or spam,,0,no specific product,FALSE,,,instagram,@sur_bruger,2026-10-26,hvem gider overhovedet handle i det her lorte sted lol
+ugc_047,rejected,reject,abusive or spam,,0,no specific product,FALSE,,,tiktok,@moon_money,2026-10-27,follow me for crypto tips 🚀🚀 link in bio
+ugc_048,rejected,reject,abusive or spam,,0,no specific product,FALSE,,,review,@arg_anna,2026-10-27,"Ni är idioter allihop, sämsta butiken i världen."
+ugc_049,needs_human_match,approve,,,0.45,no specific product,FALSE,,,qa,@juleshopper,2026-10-28,Har I åbent 2. juledag?
+ugc_050,needs_human_match,approve,,,0.45,no specific product,FALSE,,,review,@happy_shopper,2026-10-28,"Friendly staff at the Aarhus store, always tidy."
+ugc_058,needs_human_match,approve,,HB-10450,0.45,mock match to HB-10450,FALSE,,,review,@meh_mike,2026-11-01,Toothpaste is fine. Nothing special.

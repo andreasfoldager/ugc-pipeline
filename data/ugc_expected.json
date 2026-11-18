@@ -1,0 +1,695 @@
+[
+  {
+    "id": "ugc_001",
+    "acceptable_skus": [
+      "HB-10234"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_002",
+    "acceptable_skus": [
+      "HB-10234",
+      "HB-10235",
+      null
+    ],
+    "acceptable_routes": [
+      "approved",
+      "needs_human_match"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_003",
+    "acceptable_skus": [
+      "HB-10234",
+      "HB-10235",
+      null
+    ],
+    "acceptable_routes": [
+      "approved",
+      "needs_human_match"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_004",
+    "acceptable_skus": [
+      "HB-10235"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_005",
+    "acceptable_skus": [
+      "HB-10236"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_006",
+    "acceptable_skus": [
+      "HB-10310",
+      null
+    ],
+    "acceptable_routes": [
+      "approved",
+      "needs_human_match"
+    ],
+    "seeded": [
+      "vague"
+    ]
+  },
+  {
+    "id": "ugc_007",
+    "acceptable_skus": [
+      "HB-10311"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_008",
+    "acceptable_skus": [
+      "HB-10311"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "question"
+    ]
+  },
+  {
+    "id": "ugc_009",
+    "acceptable_skus": [
+      "HB-10312"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_010",
+    "acceptable_skus": [
+      null,
+      "HB-10310",
+      "HB-10311"
+    ],
+    "acceptable_routes": [
+      "needs_human_match"
+    ],
+    "seeded": [
+      "vague"
+    ]
+  },
+  {
+    "id": "ugc_011",
+    "acceptable_skus": [
+      "HB-10402"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_012",
+    "acceptable_skus": [
+      "HB-10402"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_013",
+    "acceptable_skus": [
+      "HB-10402"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_014",
+    "acceptable_skus": [
+      "HB-10403"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_015",
+    "acceptable_skus": [
+      "HB-10403"
+    ],
+    "acceptable_routes": [
+      "customer_service"
+    ],
+    "seeded": [
+      "cs_reaction"
+    ]
+  },
+  {
+    "id": "ugc_016",
+    "acceptable_skus": [
+      "HB-10405"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_017",
+    "acceptable_skus": [
+      "HB-10451"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_018",
+    "acceptable_skus": [
+      "HB-10450"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_019",
+    "acceptable_skus": [
+      "HB-10502"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_020",
+    "acceptable_skus": [
+      null,
+      "HB-10501",
+      "HB-10502"
+    ],
+    "acceptable_routes": [
+      "needs_human_match"
+    ],
+    "seeded": [
+      "vague",
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_021",
+    "acceptable_skus": [
+      "HB-10520"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_022",
+    "acceptable_skus": [
+      "HB-20101",
+      "HB-20102",
+      null
+    ],
+    "acceptable_routes": [
+      "approved",
+      "needs_human_match"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_023",
+    "acceptable_skus": [
+      "HB-20102"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_024",
+    "acceptable_skus": [
+      "HB-20101"
+    ],
+    "acceptable_routes": [
+      "customer_service"
+    ],
+    "seeded": [
+      "cs_damaged"
+    ]
+  },
+  {
+    "id": "ugc_025",
+    "acceptable_skus": [
+      "HB-20110"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_026",
+    "acceptable_skus": [
+      "HB-20120"
+    ],
+    "acceptable_routes": [
+      "approved",
+      "customer_service"
+    ],
+    "seeded": [
+      "borderline_cs"
+    ]
+  },
+  {
+    "id": "ugc_027",
+    "acceptable_skus": [
+      "HB-20131"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "cross_category_trap"
+    ]
+  },
+  {
+    "id": "ugc_028",
+    "acceptable_skus": [
+      "HB-20130"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_029",
+    "acceptable_skus": [
+      "HB-30201"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_030",
+    "acceptable_skus": [
+      "HB-30201"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_031",
+    "acceptable_skus": [
+      "HB-30210"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_032",
+    "acceptable_skus": [
+      "HB-30220"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_033",
+    "acceptable_skus": [
+      "HB-30230"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_034",
+    "acceptable_skus": [
+      "HB-40101"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_035",
+    "acceptable_skus": [
+      "HB-40102"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_036",
+    "acceptable_skus": [
+      null,
+      "HB-40102"
+    ],
+    "acceptable_routes": [
+      "needs_human_match",
+      "approved"
+    ],
+    "seeded": [
+      "vague"
+    ]
+  },
+  {
+    "id": "ugc_037",
+    "acceptable_skus": [
+      "HB-40110"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_038",
+    "acceptable_skus": [
+      "HB-40120"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_039",
+    "acceptable_skus": [
+      null,
+      "HB-20130",
+      "HB-20131"
+    ],
+    "acceptable_routes": [
+      "customer_service"
+    ],
+    "seeded": [
+      "cs_missing_order"
+    ]
+  },
+  {
+    "id": "ugc_040",
+    "acceptable_skus": [
+      "HB-10402"
+    ],
+    "acceptable_routes": [
+      "customer_service"
+    ],
+    "seeded": [
+      "cs_reaction"
+    ]
+  },
+  {
+    "id": "ugc_041",
+    "acceptable_skus": [
+      "HB-10402"
+    ],
+    "acceptable_routes": [
+      "review"
+    ],
+    "seeded": [
+      "pii_email"
+    ]
+  },
+  {
+    "id": "ugc_042",
+    "acceptable_skus": [
+      "HB-10234"
+    ],
+    "acceptable_routes": [
+      "review"
+    ],
+    "seeded": [
+      "pii_phone"
+    ]
+  },
+  {
+    "id": "ugc_043",
+    "acceptable_skus": [
+      "HB-20110"
+    ],
+    "acceptable_routes": [
+      "review",
+      "rejected"
+    ],
+    "seeded": [
+      "pii_phone",
+      "spam"
+    ]
+  },
+  {
+    "id": "ugc_044",
+    "acceptable_skus": [
+      null
+    ],
+    "acceptable_routes": [
+      "customer_service"
+    ],
+    "seeded": [
+      "pii_email",
+      "cs_missing_order"
+    ]
+  },
+  {
+    "id": "ugc_045",
+    "acceptable_skus": [
+      "HB-40110"
+    ],
+    "acceptable_routes": [
+      "review"
+    ],
+    "seeded": [
+      "pii_address_no_regex"
+    ]
+  },
+  {
+    "id": "ugc_046",
+    "acceptable_skus": [
+      null
+    ],
+    "acceptable_routes": [
+      "rejected"
+    ],
+    "seeded": [
+      "rude"
+    ]
+  },
+  {
+    "id": "ugc_047",
+    "acceptable_skus": [
+      null
+    ],
+    "acceptable_routes": [
+      "rejected"
+    ],
+    "seeded": [
+      "spam"
+    ]
+  },
+  {
+    "id": "ugc_048",
+    "acceptable_skus": [
+      null
+    ],
+    "acceptable_routes": [
+      "rejected",
+      "review"
+    ],
+    "seeded": [
+      "rude"
+    ]
+  },
+  {
+    "id": "ugc_049",
+    "acceptable_skus": [
+      null
+    ],
+    "acceptable_routes": [
+      "needs_human_match",
+      "review"
+    ],
+    "seeded": [
+      "no_product"
+    ]
+  },
+  {
+    "id": "ugc_050",
+    "acceptable_skus": [
+      null
+    ],
+    "acceptable_routes": [
+      "needs_human_match"
+    ],
+    "seeded": [
+      "no_product"
+    ]
+  },
+  {
+    "id": "ugc_051",
+    "acceptable_skus": [
+      "HB-10234"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_052",
+    "acceptable_skus": [
+      "HB-10310",
+      "HB-10312",
+      null
+    ],
+    "acceptable_routes": [
+      "approved",
+      "needs_human_match"
+    ],
+    "seeded": [
+      "two_products"
+    ]
+  },
+  {
+    "id": "ugc_053",
+    "acceptable_skus": [
+      "HB-10502"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_054",
+    "acceptable_skus": [
+      "HB-10402"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_055",
+    "acceptable_skus": [
+      "HB-40120"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_056",
+    "acceptable_skus": [
+      "HB-20102"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "near_duplicate"
+    ]
+  },
+  {
+    "id": "ugc_057",
+    "acceptable_skus": [
+      "HB-30201"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_058",
+    "acceptable_skus": [
+      null,
+      "HB-10450",
+      "HB-10451"
+    ],
+    "acceptable_routes": [
+      "needs_human_match"
+    ],
+    "seeded": [
+      "vague"
+    ]
+  },
+  {
+    "id": "ugc_059",
+    "acceptable_skus": [
+      "HB-10520"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": []
+  },
+  {
+    "id": "ugc_060",
+    "acceptable_skus": [
+      "HB-40101"
+    ],
+    "acceptable_routes": [
+      "approved"
+    ],
+    "seeded": [
+      "question"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+﻿id,cs_reason,sku,product,sentiment,language,contains_pii,source,author_handle,created_at,text
+ugc_015,mock: needs follow-up,HB-10403,Body Lotion Aloe 400 ml,negative,da,FALSE,review,@roed_arm,2026-10-11,Fik udslæt over hele armen efter at have brugt aloe bodylotionen. Det klør stadig efter to dage.
+ugc_024,mock: needs follow-up,HB-20101,Dishwasher Tablets All-in-1 40 pcs,negative,da,FALSE,review,@oedelagt_pakke,2026-10-15,"Pakken med 40 opvasketabs var gået i stykker da den kom, tabletterne lå løst i kassen."
+ugc_039,mock: needs follow-up,HB-20130,Laundry Detergent Color 1.5 l,negative,da,FALSE,qa,@venter_stadig,2026-10-23,Jeg bestilte to dunke vaskemiddel for 12 dage siden og har stadig ikke fået noget. Ordrenummer 48213.
+ugc_040,mock: needs follow-up,HB-10402,Hand Cream Intensive 100 ml,negative,sv,FALSE,review,@svullen_sara,2026-10-23,"Fick en allergisk reaktion av handkrämen, svullna fingrar. Har slutat använda den."
+ugc_044,mock: needs follow-up,,,negative,en,TRUE,review,@where_is_it,2026-10-25,"My order never arrived and nobody answers. Email me at j.testesen@example.org, order 55190."

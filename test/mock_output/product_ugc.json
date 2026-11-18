@@ -1,0 +1,875 @@
+[
+  {
+    "sku": "HB-10234",
+    "name": "Shower Gel Sensitive 500 ml",
+    "brand": "Lune",
+    "category": "Personal care > Shower",
+    "url_slug": "shower-gel-sensitive-500ml",
+    "ugc_count": 4,
+    "avg_rating": 4.3,
+    "rating_count": 3,
+    "sentiment": {
+      "positive": 4,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Endelig en shower gel uden parfume der ikke koster en formue 🙌 #sensitivhud #hverdagsbutikken",
+        "lang": "da",
+        "source": "instagram",
+        "author": "@morgenkaffe_mette",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_002"
+      },
+      {
+        "text": "Bedste parfumefri shower gel jeg har prøvet, min hud klør ikke længere.",
+        "lang": "da",
+        "source": "review",
+        "author": "@hudhanne",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_001"
+      },
+      {
+        "text": "Shower gel Sensitive i 500 ml er blevet min faste.",
+        "lang": "da",
+        "source": "review",
+        "author": "@fast_kunde",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_051"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10402",
+    "name": "Hand Cream Intensive 100 ml",
+    "brand": "Havbris",
+    "category": "Personal care > Skin",
+    "url_slug": "hand-cream-intensive-100ml",
+    "ugc_count": 3,
+    "avg_rating": 5,
+    "rating_count": 2,
+    "sentiment": {
+      "positive": 3,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "winter survival kit: the intensive hand cream from @hverdagsbutikken, tea and wool socks",
+        "lang": "en",
+        "source": "instagram",
+        "author": "@cosy_corner",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_013"
+      },
+      {
+        "text": "Håndcremen redder mine hænder om vinteren.",
+        "lang": "da",
+        "source": "review",
+        "author": "@vinterhaender",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_011"
+      },
+      {
+        "text": "Beste håndkremen jeg har prøvd til prisen.",
+        "lang": "no",
+        "source": "review",
+        "author": "@prisbevisst",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_054"
+      }
+    ]
+  },
+  {
+    "sku": "HB-30201",
+    "name": "Microfiber Cloths 6-pack",
+    "brand": "Fjordhus",
+    "category": "Household > Cleaning tools",
+    "url_slug": "microfiber-cloths-6",
+    "ugc_count": 3,
+    "avg_rating": 5,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 3,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Fredagsrengøring ✨ mikrofiberklude fra Fjordhus og en god podcast",
+        "lang": "da",
+        "source": "instagram",
+        "author": "@fredagsfix",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_030"
+      },
+      {
+        "text": "lifehack: mikrofiberklude + eddike på badeværelset 🔥",
+        "lang": "da",
+        "source": "tiktok",
+        "author": "@rengoeringsrebel",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_057"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10310",
+    "name": "Shampoo Volume 400 ml",
+    "brand": "Lune",
+    "category": "Personal care > Hair",
+    "url_slug": "shampoo-volume-400ml",
+    "ugc_count": 2,
+    "avg_rating": 5,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 2,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "den nye volumen shampoo fra lune giver altså fylde 😍 håret står helt op",
+        "lang": "da",
+        "source": "tiktok",
+        "author": "@haartok_dk",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_006"
+      },
+      {
+        "text": "Volumen-shampooen og balsammen sammen = perfekt hår",
+        "lang": "da",
+        "source": "review",
+        "author": "@perfekt_haar",
+        "rating": 5,
+        "media": true,
+        "ugc_id": "ugc_052"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10311",
+    "name": "Shampoo Anti-Dandruff 400 ml",
+    "brand": "Lune",
+    "category": "Personal care > Hair",
+    "url_slug": "shampoo-anti-dandruff-400ml",
+    "ugc_count": 2,
+    "avg_rating": 2,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 1
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Sjampoen mot flass hjalp ikke i det hele tatt etter tre uker.",
+        "lang": "no",
+        "source": "review",
+        "author": "@ola_tester",
+        "rating": 2,
+        "media": false,
+        "ugc_id": "ugc_007"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10502",
+    "name": "Mascara Waterproof Black",
+    "brand": "Glimt",
+    "category": "Cosmetics > Eyes",
+    "url_slug": "mascara-waterproof-black",
+    "ugc_count": 2,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 2,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "this 30 kr waterproof mascara does NOT budge in the rain 🌧️",
+        "lang": "en",
+        "source": "tiktok",
+        "author": "@rainy_lashes",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_019"
+      },
+      {
+        "text": "Vattenfast mascara som faktiskt håller hela dagen.",
+        "lang": "sv",
+        "source": "review",
+        "author": "@heldagslook",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_053"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10520",
+    "name": "Lip Balm Vanilla",
+    "brand": "Glimt",
+    "category": "Cosmetics > Lips",
+    "url_slug": "lip-balm-vanilla",
+    "ugc_count": 2,
+    "avg_rating": 5,
+    "rating_count": 2,
+    "sentiment": {
+      "positive": 2,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Vanilje læbepomaden dufter som kage 😄 min datter elsker den",
+        "lang": "da",
+        "source": "review",
+        "author": "@kagemor",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_021"
+      },
+      {
+        "text": "Vanilje lip balm er altid i min taske.",
+        "lang": "da",
+        "source": "review",
+        "author": "@taskefund",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_059"
+      }
+    ]
+  },
+  {
+    "sku": "HB-20102",
+    "name": "Dishwasher Tablets All-in-1 80 pcs",
+    "brand": "Ren Hverdag",
+    "category": "Cleaning > Dishes",
+    "url_slug": "dishwasher-tablets-80",
+    "ugc_count": 2,
+    "avg_rating": 4,
+    "rating_count": 2,
+    "sentiment": {
+      "positive": 2,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "The 80-pack of dishwasher tablets is great value for a family of five.",
+        "lang": "en",
+        "source": "review",
+        "author": "@family_of_five",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_023"
+      },
+      {
+        "text": "Opvasketabletterne i 80 stk pakken holder en hel måned hos os.",
+        "lang": "da",
+        "source": "review",
+        "author": "@maanedsmor",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_056"
+      }
+    ]
+  },
+  {
+    "sku": "HB-40101",
+    "name": "Salted Liquorice 250 g",
+    "brand": "Knasekompagniet",
+    "category": "Snacks > Sweets",
+    "url_slug": "salted-liquorice-250g",
+    "ugc_count": 2,
+    "avg_rating": null,
+    "rating_count": 0,
+    "sentiment": {
+      "positive": 2,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "saltlakrids test 🧂 de her er SÅ salte, 10/10",
+        "lang": "da",
+        "source": "tiktok",
+        "author": "@slikanmelder",
+        "rating": null,
+        "media": true,
+        "ugc_id": "ugc_034"
+      }
+    ]
+  },
+  {
+    "sku": "HB-40120",
+    "name": "Dark Chocolate 70% 100 g",
+    "brand": "Knasekompagniet",
+    "category": "Snacks > Chocolate",
+    "url_slug": "dark-chocolate-70-100g",
+    "ugc_count": 2,
+    "avg_rating": 4,
+    "rating_count": 2,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 1,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Chokoladen er lidt for bitter til mig, men min mand elsker den.",
+        "lang": "da",
+        "source": "review",
+        "author": "@soed_tand",
+        "rating": 3,
+        "media": false,
+        "ugc_id": "ugc_055"
+      },
+      {
+        "text": "70% chokoladen er virkelig god til prisen.",
+        "lang": "da",
+        "source": "review",
+        "author": "@kakaokim",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_038"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10235",
+    "name": "Shower Gel Sensitive 250 ml",
+    "brand": "Lune",
+    "category": "Personal care > Shower",
+    "url_slug": "shower-gel-sensitive-250ml",
+    "ugc_count": 1,
+    "avg_rating": 5,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Bought the small 250 ml sensitive shower gel for travel, really gentle on my eczema.",
+        "lang": "en",
+        "source": "review",
+        "author": "@nomad_notes",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_004"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10236",
+    "name": "Shower Gel Fresh Citrus 500 ml",
+    "brand": "Lune",
+    "category": "Personal care > Shower",
+    "url_slug": "shower-gel-fresh-citrus-500ml",
+    "ugc_count": 1,
+    "avg_rating": 3,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 0,
+      "neutral": 1,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Citrus duften er frisk, men den forsvinder hurtigt.",
+        "lang": "da",
+        "source": "review",
+        "author": "@peter_p_dk",
+        "rating": 3,
+        "media": false,
+        "ugc_id": "ugc_005"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10312",
+    "name": "Conditioner Volume 400 ml",
+    "brand": "Lune",
+    "category": "Personal care > Hair",
+    "url_slug": "conditioner-volume-400ml",
+    "ugc_count": 1,
+    "avg_rating": 1,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 0,
+      "neutral": 0,
+      "negative": 1
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "The volume conditioner made my hair greasy after one wash.",
+        "lang": "en",
+        "source": "review",
+        "author": "@greasy_gale",
+        "rating": 1,
+        "media": false,
+        "ugc_id": "ugc_009"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10403",
+    "name": "Body Lotion Aloe 400 ml",
+    "brand": "Havbris",
+    "category": "Personal care > Skin",
+    "url_slug": "body-lotion-aloe-400ml",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Aloe lotionen er dejlig let og god efter en dag i solen.",
+        "lang": "da",
+        "source": "review",
+        "author": "@solskinsstine",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_014"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10405",
+    "name": "Day Cream SPF 15 50 ml",
+    "brand": "Havbris",
+    "category": "Personal care > Skin",
+    "url_slug": "day-cream-spf15-50ml",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Nice light day cream with SPF, works well under makeup.",
+        "lang": "en",
+        "source": "review",
+        "author": "@makeup_mira",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_016"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10450",
+    "name": "Toothpaste Whitening 75 ml",
+    "brand": "Smil",
+    "category": "Personal care > Oral care",
+    "url_slug": "toothpaste-whitening-75ml",
+    "ugc_count": 1,
+    "avg_rating": 2,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 0,
+      "neutral": 0,
+      "negative": 1
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Whitening-tandkrämen smakar konstigt och jag ser ingen skillnad.",
+        "lang": "sv",
+        "source": "review",
+        "author": "@vita_tander",
+        "rating": 2,
+        "media": false,
+        "ugc_id": "ugc_018"
+      }
+    ]
+  },
+  {
+    "sku": "HB-10451",
+    "name": "Toothpaste Sensitive 75 ml",
+    "brand": "Smil",
+    "category": "Personal care > Oral care",
+    "url_slug": "toothpaste-sensitive-75ml",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Tannkremen for sensitive tenner fungerer, mye mindre ising når jeg drikker kaldt.",
+        "lang": "no",
+        "source": "review",
+        "author": "@kaldt_vann",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_017"
+      }
+    ]
+  },
+  {
+    "sku": "HB-20101",
+    "name": "Dishwasher Tablets All-in-1 40 pcs",
+    "brand": "Ren Hverdag",
+    "category": "Cleaning > Dishes",
+    "url_slug": "dishwasher-tablets-40",
+    "ugc_count": 1,
+    "avg_rating": 5,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Opvasketabletterne gør glassene skinnende rene, også på kort program.",
+        "lang": "da",
+        "source": "review",
+        "author": "@glasklart",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_022"
+      }
+    ]
+  },
+  {
+    "sku": "HB-20110",
+    "name": "Dish Soap Lemon 500 ml",
+    "brand": "Ren Hverdag",
+    "category": "Cleaning > Dishes",
+    "url_slug": "dish-soap-lemon-500ml",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Diskmedlet med citron löser fett bra och doftar fräscht.",
+        "lang": "sv",
+        "source": "review",
+        "author": "@diskdrottning",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_025"
+      }
+    ]
+  },
+  {
+    "sku": "HB-20120",
+    "name": "Multi-Surface Cleaner Spray 750 ml",
+    "brand": "Ren Hverdag",
+    "category": "Cleaning > Surfaces",
+    "url_slug": "multi-surface-cleaner-750ml",
+    "ugc_count": 1,
+    "avg_rating": 2,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 0,
+      "neutral": 0,
+      "negative": 1
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Sprayflasken holdt op med at virke efter en uge, men selve rengøringsmidlet er fint.",
+        "lang": "da",
+        "source": "review",
+        "author": "@spray_sur",
+        "rating": 2,
+        "media": false,
+        "ugc_id": "ugc_026"
+      }
+    ]
+  },
+  {
+    "sku": "HB-20130",
+    "name": "Laundry Detergent Color 1.5 l",
+    "brand": "Ren Hverdag",
+    "category": "Cleaning > Laundry",
+    "url_slug": "laundry-detergent-color-1-5l",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Colorvaskemiddelet holder fargene fine, og 1,5 liter rekker lenge.",
+        "lang": "no",
+        "source": "review",
+        "author": "@fargerik",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_028"
+      }
+    ]
+  },
+  {
+    "sku": "HB-20131",
+    "name": "Laundry Detergent Sensitive 1.5 l",
+    "brand": "Ren Hverdag",
+    "category": "Cleaning > Laundry",
+    "url_slug": "laundry-detergent-sensitive-1-5l",
+    "ugc_count": 1,
+    "avg_rating": 5,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Sensitiv vaskemiddel uden parfume, endelig noget min søns hud kan tåle.",
+        "lang": "da",
+        "source": "review",
+        "author": "@vasketoejsmor",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_027"
+      }
+    ]
+  },
+  {
+    "sku": "HB-30210",
+    "name": "Kitchen Towel 4 rolls",
+    "brand": "Fjordhus",
+    "category": "Household > Paper",
+    "url_slug": "kitchen-towel-4",
+    "ugc_count": 1,
+    "avg_rating": 3,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 0,
+      "neutral": 1,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Køkkenrullen er okay, men lidt tynd.",
+        "lang": "da",
+        "source": "review",
+        "author": "@papirpelle",
+        "rating": 3,
+        "media": false,
+        "ugc_id": "ugc_031"
+      }
+    ]
+  },
+  {
+    "sku": "HB-30220",
+    "name": "Tea Lights Unscented 50 pcs",
+    "brand": "Fjordhus",
+    "category": "Household > Candles",
+    "url_slug": "tea-lights-50",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Värmeljusen brinner länge, ungefär 4 timmar.",
+        "lang": "sv",
+        "source": "review",
+        "author": "@ljusalva",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_032"
+      }
+    ]
+  },
+  {
+    "sku": "HB-30230",
+    "name": "Storage Boxes 3-pack",
+    "brand": "Fjordhus",
+    "category": "Household > Storage",
+    "url_slug": "storage-boxes-3",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Storage boxes stack nicely, the lids are a bit loose though.",
+        "lang": "en",
+        "source": "review",
+        "author": "@tidy_tom",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_033"
+      }
+    ]
+  },
+  {
+    "sku": "HB-40102",
+    "name": "Sweet Liquorice 250 g",
+    "brand": "Knasekompagniet",
+    "category": "Snacks > Sweets",
+    "url_slug": "sweet-liquorice-250g",
+    "ugc_count": 1,
+    "avg_rating": 5,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Den söta lakritsen är mjuk och god, försvann på en kväll.",
+        "lang": "sv",
+        "source": "review",
+        "author": "@godisgodis",
+        "rating": 5,
+        "media": false,
+        "ugc_id": "ugc_035"
+      }
+    ]
+  },
+  {
+    "sku": "HB-40110",
+    "name": "Potato Chips Sea Salt 175 g",
+    "brand": "Knasekompagniet",
+    "category": "Snacks > Chips",
+    "url_slug": "potato-chips-sea-salt-175g",
+    "ugc_count": 1,
+    "avg_rating": 4,
+    "rating_count": 1,
+    "sentiment": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    },
+    "top_topics": [
+      "quality"
+    ],
+    "top_quotes": [
+      {
+        "text": "Sea salt crisps are crunchy and not too greasy.",
+        "lang": "en",
+        "source": "review",
+        "author": "@crisp_critic",
+        "rating": 4,
+        "media": false,
+        "ugc_id": "ugc_037"
+      }
+    ]
+  }
+]
