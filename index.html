@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hverdagsbutikken: UGC pipeline demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f6f7f5;
+    --panel: #ffffff;
+    --ink: #14211b;
+    --ink-2: #4f5a54;
+    --ink-3: #7a847e;
+    --line: #dfe3e0;
+    --pine: #1e5b45;
+    --mint: #e3efe8;
+    --tag: #ffe45c;
+    --tag-edge: #e9cb2e;
+    --r-approved: #2a78d6;
+    --r-cs: #eb6834;
+    --r-review: #1baf7a;
+    --r-match: #eda100;
+    --r-rejected: #e87ba4;
+    --r-error: #8a8f8c;
+    --display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --body: 'Instrument Sans', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.5 var(--body); }
+  a { color: var(--pine); }
+  :focus-visible { outline: 3px solid var(--r-approved); outline-offset: 2px; border-radius: 4px; }
+
+  /* top bar */
+  .top { background: var(--pine); color: #fff; }
+  .top-inner { max-width: 1180px; margin: 0 auto; padding: 18px 24px 0; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px 32px; }
+  .brand { font: 800 1.75rem/1 var(--display); letter-spacing: -0.02em; padding-bottom: 16px; }
+  .brand small { display: block; font: 400 0.85rem/1.4 var(--body); letter-spacing: 0; opacity: .8; margin-top: 6px; }
+  nav { display: flex; gap: 4px; margin-left: auto; }
+  nav a { color: #fff; text-decoration: none; padding: 10px 16px 12px; border-radius: 8px 8px 0 0; font-weight: 600; opacity: .85; }
+  nav a[aria-current="page"] { background: var(--bg); color: var(--ink); opacity: 1; }
+  nav a:hover { opacity: 1; }
+
+  main { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+  .view[hidden] { display: none; }
+  .status { padding: 48px 0; color: var(--ink-2); }
+
+  /* product view */
+  .shop { display: grid; grid-template-columns: 270px 1fr; gap: 40px; align-items: start; }
+  .plist h2 { font: 600 0.95rem/1.3 var(--body); color: var(--ink-2); margin: 0 0 12px; }
+  .plist { position: sticky; top: 16px; display: flex; flex-direction: column; max-height: calc(100vh - 32px); }
+  .plist ul { list-style: none; margin: 0; padding: 2px 6px 2px 2px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #c9d1cc transparent; min-height: 0; flex: 1;
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); }
+  .plist ul::-webkit-scrollbar { width: 6px; height: 6px; }
+  .plist ul::-webkit-scrollbar-track { background: transparent; }
+  .plist ul::-webkit-scrollbar-thumb { background: #c9d1cc; border-radius: 3px; }
+  .plist ul::-webkit-scrollbar-thumb:hover { background: #9faba4; }
+  .plist button { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; width: 100%; padding: 10px 12px; border-radius: 8px; }
+  .plist button:hover { background: var(--mint); }
+  .plist button[aria-pressed="true"] { background: var(--panel); box-shadow: inset 3px 0 0 var(--pine), 0 0 0 1px var(--line); }
+  .plist .pn { font-weight: 600; font-size: .95rem; line-height: 1.3; }
+  .plist .pc { color: var(--ink-3); font-size: .85rem; grid-row: span 2; align-self: center; }
+  .plist .pb { color: var(--ink-3); font-size: .8rem; }
+
+  .product { min-width: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 32px; }
+  .hero { display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: center; }
+  .pic { aspect-ratio: 1; background: var(--mint); border-radius: 12px; display: grid; place-items: center; }
+  .pic svg { width: 56%; height: 56%; }
+  .crumbs { color: var(--ink-3); font-size: .85rem; }
+  .product h1 { font: 800 clamp(1.8rem, 3.2vw, 2.6rem)/1.05 var(--display); letter-spacing: -0.02em; margin: 6px 0 4px; overflow-wrap: anywhere; }
+  .by { color: var(--ink-2); margin: 0 0 16px; }
+  .rating { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--ink); letter-spacing: 2px; font-size: 1.15rem; }
+  .stars .off { color: var(--line); }
+  .rating span { color: var(--ink-2); font-size: .95rem; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px 32px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .facts h3 { font: 600 .85rem/1.3 var(--body); color: var(--ink-2); margin: 0 0 8px; }
+  .sbar { display: flex; height: 10px; gap: 2px; border-radius: 5px; overflow: hidden; background: var(--line); }
+  .sbar i { display: block; }
+  .skey { display: flex; gap: 14px; font-size: .85rem; color: var(--ink-2); margin-top: 8px; flex-wrap: wrap; }
+  .skey b { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 5px; vertical-align: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips span { background: var(--mint); color: var(--pine); border-radius: 999px; padding: 3px 11px; font-size: .85rem; font-weight: 500; }
+
+  .says { margin-top: 40px; }
+  .says h2 { font: 700 1.5rem/1.2 var(--display); margin: 0 0 18px; letter-spacing: -0.01em; }
+  .tags { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 18px; }
+  .tagcard { position: relative; background: var(--tag); border-radius: 8px; padding: 22px 22px 18px 44px; box-shadow: 0 1px 0 var(--tag-edge), 0 6px 0 -3px var(--tag-edge); display: flex; flex-direction: column; gap: 14px; }
+  .tagcard::before { content: ""; position: absolute; left: 16px; top: 24px; width: 12px; height: 12px; border-radius: 50%; background: var(--panel); box-shadow: inset 0 1px 2px rgba(20,33,27,.35); }
+  .tagcard q { font: 700 1.3rem/1.25 var(--display); letter-spacing: -0.01em; quotes: "»" "«"; }
+  .tagcard footer { font-size: .85rem; color: #3d3a1f; display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: auto; }
+  .tagcard footer strong { color: var(--ink); font-weight: 600; }
+  .empty { color: var(--ink-2); background: var(--bg); border-radius: 10px; padding: 18px 20px; }
+
+  /* behind the scenes */
+  .bts-head { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: end; margin-bottom: 28px; }
+  .bts-head h1 { font: 800 clamp(2rem, 4vw, 3rem)/1.02 var(--display); letter-spacing: -0.02em; margin: 0 0 10px; }
+  .bts-head p { color: var(--ink-2); margin: 0; max-width: 60ch; }
+  .flow { color: var(--ink-2); font-size: .9rem; margin: 0; padding-left: 1.2em; }
+  .flow li { margin: 2px 0; }
+
+  .board { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 28px; align-items: start; }
+  .gridwrap { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 18px; font-size: .9rem; }
+  .legend button { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; padding: 4px 8px; border-radius: 6px; color: var(--ink); }
+  .legend button:hover { background: var(--bg); }
+  .legend button[aria-pressed="false"] { opacity: .35; }
+  .legend b { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .legend .n { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .tiles { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; }
+  .tile { all: unset; cursor: pointer; aspect-ratio: 1; border-radius: 6px; position: relative; display: grid; place-items: center; color: #fff; font: 600 .7rem/1 var(--body); font-variant-numeric: tabular-nums; transition: transform .12s ease; }
+  .tile:hover { transform: scale(1.08); }
+  .tile[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--panel), 0 0 0 4px var(--ink); }
+  .tile.dim { opacity: .15; }
+  .tile .pii { position: absolute; top: 3px; right: 3px; width: 6px; height: 6px; border-radius: 50%; background: #fff; }
+  .hint { color: var(--ink-3); font-size: .85rem; margin: 14px 0 0; }
+
+  .detail { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 24px; position: sticky; top: 16px; }
+  .detail h2 { font: 700 1.15rem/1.2 var(--display); margin: 0 0 4px; }
+  .detail .meta { color: var(--ink-3); font-size: .85rem; margin: 0 0 14px; }
+  .detail blockquote { margin: 0 0 18px; padding: 14px 16px; background: var(--bg); border-radius: 8px; font-size: .98rem; }
+  .badge { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: .9rem; margin-bottom: 14px; }
+  .badge b { width: 12px; height: 12px; border-radius: 3px; }
+  dl { margin: 0; display: grid; grid-template-columns: 120px 1fr; gap: 8px 12px; font-size: .9rem; }
+  dt { color: var(--ink-3); }
+  dd { margin: 0; }
+  .conf { display: inline-block; width: 70px; height: 6px; background: var(--line); border-radius: 3px; vertical-align: middle; margin-left: 8px; overflow: hidden; }
+  .conf i { display: block; height: 100%; background: var(--ink); }
+  .guard { color: #9a3b14; }
+
+  .queues { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 28px; }
+  .queue { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 24px; overflow-x: auto; }
+  .queue h2 { font: 700 1.2rem/1.2 var(--display); margin: 0 0 4px; }
+  .queue p { color: var(--ink-2); font-size: .9rem; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  th { text-align: left; font-weight: 600; color: var(--ink-2); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.id button { all: unset; cursor: pointer; color: var(--pine); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+
+  footer.site { max-width: 1180px; margin: 0 auto; padding: 0 24px 40px; color: var(--ink-3); font-size: .85rem; }
+
+  @media (max-width: 900px) {
+    .shop, .board, .queues, .bts-head { grid-template-columns: minmax(0, 1fr); }
+    .plist { position: static; max-height: none; }
+    .plist ul { display: flex; overflow-x: auto; overflow-y: hidden; gap: 6px; padding-bottom: 6px; mask-image: none; }
+    .plist li { flex: 0 0 210px; }
+    .detail { position: static; }
+    .hero { grid-template-columns: 110px 1fr; gap: 18px; }
+    .product { padding: 20px; }
+    nav { margin-left: 0; }
+  }
+  @media (max-width: 520px) {
+    .tiles { grid-template-columns: repeat(6, 1fr); }
+    .hero { grid-template-columns: 1fr; }
+    .pic { width: 120px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .tile { transition: none; } .tile:hover { transform: none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">Hverdagsbutikken<small>Demo af en UGC-pipeline. Butikken, produkterne og kunderne er opdigtede.</small></div>
+    <nav aria-label="Visning">
+      <a href="#produkter" data-view="produkter">Produktsider</a>
+      <a href="#bag-kulisserne" data-view="bag-kulisserne">Bag kulisserne</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="status" id="status">Henter data…</p>
+
+  <section class="view" id="view-produkter" hidden>
+    <div class="shop">
+      <aside class="plist">
+        <h2 id="plist-title">Produkter med kundeindhold</h2>
+        <ul id="plist"></ul>
+      </aside>
+      <article class="product" id="product" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section class="view" id="view-bag-kulisserne" hidden>
+    <div class="bts-head">
+      <div>
+        <h1 id="bts-title">Alle kommentarer, sorteret</h1>
+        <p>Hver firkant er én kommentar fra en kunde. Pipelinen har fundet produktet, vurderet stemningen og sendt den videre til webshoppen, kundeservice eller en medarbejder. Klik på en firkant for at se, hvad Claude besluttede og hvorfor.</p>
+      </div>
+      <ol class="flow">
+        <li>Regler først: regex fanger e-mails og telefonnumre</li>
+        <li>Claude matcher produkt, stemning, moderation og citat</li>
+        <li>Kode tjekker svaret: ingen opdigtede SKU’er, kun ordrette citater</li>
+        <li>Første regel, der passer, bestemmer køen</li>
+      </ol>
+    </div>
+    <div class="board">
+      <div class="gridwrap">
+        <div class="legend" id="legend" role="group" aria-label="Filtrer efter kø"></div>
+        <div class="tiles" id="tiles"></div>
+        <p class="hint">En hvid prik betyder, at kommentaren indeholder personoplysninger. Klik på en kø ovenfor for at skjule eller vise den.</p>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+    <div class="queues">
+      <section class="queue">
+        <h2>Kundeservice</h2>
+        <p>Reaktioner, ødelagte varer og manglende ordrer. Køen er intern, så den fulde tekst bevares.</p>
+        <table><thead><tr><th>Kommentar</th><th>Produkt</th><th>Årsag</th></tr></thead><tbody id="cs-rows"></tbody></table>
+      </section>
+      <section class="queue">
+        <h2>Til en medarbejder</h2>
+        <p>Personoplysninger, usikre produktmatch og afviste indlæg. Intet herfra vises på webshoppen.</p>
+        <table><thead><tr><th>Kommentar</th><th>Kø</th><th>Hvorfor</th></tr></thead><tbody id="mod-rows"></tbody></table>
+      </section>
+    </div>
+  </section>
+</main>
+<footer class="site" id="site-footer">Bygget med n8n og Claude.</footer>
+
+<script>
+(() => {
+  const ROUTES = [
+    { key: 'approved', label: 'Webshop', color: 'var(--r-approved)', long: 'Godkendt til webshoppen' },
+    { key: 'customer_service', label: 'Kundeservice', color: 'var(--r-cs)', long: 'Sendt til kundeservice' },
+    { key: 'review', label: 'Gennemgang', color: 'var(--r-review)', long: 'Til gennemgang (personoplysninger e.l.)' },
+    { key: 'needs_human_match', label: 'Usikkert produkt', color: 'var(--r-match)', long: 'Usikkert produktmatch, en medarbejder vælger' },
+    { key: 'rejected', label: 'Afvist', color: 'var(--r-rejected)', long: 'Afvist (spam eller groft sprog)' },
+    { key: 'error', label: 'Fejl', color: 'var(--r-error)', long: 'Fejl i svaret fra Claude' },
+  ];
+  const R = Object.fromEntries(ROUTES.map((r) => [r.key, r]));
+  const LANG = { da: 'dansk', sv: 'svensk', no: 'norsk', en: 'engelsk' };
+  const SOURCE = { review: 'Anmeldelse', instagram: 'Instagram', tiktok: 'TikTok', qa: 'Spørgsmål' };
+  const SENT = { positive: 'Positiv', neutral: 'Neutral', negative: 'Negativ' };
+  const MOD = { approve: 'Godkend', review: 'Gennemgå', reject: 'Afvis' };
+
+  const el = (tag, attrs = {}, ...kids) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === 'class') n.className = v;
+      else if (k === 'style') n.setAttribute('style', v);
+      else if (k.startsWith('on')) n.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) n.setAttribute(k, v === true ? '' : v);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) n.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    return n;
+  };
+  const num = (v, d = 1) => Number(v).toLocaleString('da-DK', { minimumFractionDigits: d, maximumFractionDigits: d });
+
+  function parseCsv(text) {
+    const rows = []; let row = [], f = '', q = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (q) { if (c === '"' && text[i + 1] === '"') { f += '"'; i++; } else if (c === '"') q = false; else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ',') { row.push(f); f = ''; }
+      else if (c === '\n' || c === '\r') { if (c === '\r' && text[i + 1] === '\n') i++; row.push(f); f = ''; if (row.some(Boolean)) rows.push(row); row = []; }
+      else f += c;
+    }
+    row.push(f); if (row.some(Boolean)) rows.push(row);
+    const [h, ...d] = rows;
+    return d.map((r) => Object.fromEntries(h.map((k, i) => [k.trim().replace(/^﻿/, ''), (r[i] || '').trim()])));
+  }
+
+  // simple product pictograms per top-level category
+  const ICONS = {
+    'Personal care': '<rect x="38" y="10" width="24" height="12" rx="3"/><path d="M30 30h40v58a6 6 0 0 1-6 6H36a6 6 0 0 1-6-6z"/><rect x="34" y="22" width="32" height="8"/>',
+    'Cosmetics': '<rect x="40" y="8" width="20" height="30" rx="8"/><rect x="34" y="38" width="32" height="56" rx="4"/>',
+    'Cleaning': '<path d="M40 8h22l8 10H40z"/><rect x="46" y="18" width="10" height="12"/><path d="M34 30h34l4 10v48a6 6 0 0 1-6 6H36a6 6 0 0 1-6-6V40z"/>',
+    'Household': '<rect x="14" y="34" width="72" height="54" rx="5"/><rect x="10" y="22" width="80" height="14" rx="4"/>',
+    'Snacks': '<path d="M24 14h52l-4 8 6 70H22l6-70z"/>',
+  };
+  const icon = (category) => {
+    const top = (category || '').split('>')[0].trim();
+    return `<svg viewBox="0 0 100 100" fill="#1e5b45" aria-hidden="true">${ICONS[top] || ICONS.Household}</svg>`;
+  };
+  const stars = (v) => {
+    const n = Math.round(v);
+    const s = el('span', { class: 'stars', 'aria-hidden': 'true' });
+    for (let i = 1; i <= 5; i++) s.append(el('span', { class: i <= n ? '' : 'off' }, '★'));
+    return s;
+  };
+
+  let products = [], results = [], names = {}, current = null, hidden = new Set(), selected = null;
+
+  // ---------- product pages ----------
+  function renderList() {
+    const ul = document.getElementById('plist');
+    ul.replaceChildren(...products.map((p) => el('li', {},
+      el('button', { type: 'button', 'aria-pressed': String(p.sku === current), onclick: () => { current = p.sku; renderList(); renderProduct(); } },
+        el('span', { class: 'pn' }, p.name),
+        el('span', { class: 'pc' }, `${p.ugc_count}`),
+        el('span', { class: 'pb' }, p.brand)))));
+    document.getElementById('plist-title').textContent = `${products.length} produkter med kundeindhold`;
+  }
+
+  function renderProduct() {
+    const p = products.find((x) => x.sku === current);
+    const box = document.getElementById('product');
+    if (!p) { box.replaceChildren(el('p', { class: 'empty' }, 'Vælg et produkt i listen.')); return; }
+    const s = p.sentiment, total = s.positive + s.neutral + s.negative || 1;
+    const pic = el('div', { class: 'pic' }); pic.innerHTML = icon(p.category);
+    const rating = el('div', { class: 'rating' });
+    if (p.avg_rating != null) rating.append(stars(p.avg_rating), el('span', {}, `${num(p.avg_rating)} af 5 ud fra ${p.rating_count} ${p.rating_count === 1 ? 'bedømmelse' : 'bedømmelser'}`));
+    else rating.append(el('span', {}, 'Ingen bedømmelser endnu'));
+
+    const quotes = p.top_quotes.length
+      ? el('div', { class: 'tags' }, p.top_quotes.map((q) => el('figure', { class: 'tagcard', style: 'margin:0' },
+          el('q', { lang: q.lang === 'no' ? 'nb' : q.lang }, q.text),
+          el('footer', {},
+            el('strong', {}, q.author),
+            el('span', {}, SOURCE[q.source] || q.source),
+            el('span', {}, `på ${LANG[q.lang] || q.lang}`),
+            q.rating ? el('span', {}, `${q.rating} af 5`) : null))))
+      : el('p', { class: 'empty' }, 'Ingen citater til siden endnu. Kommentarerne om produktet var spørgsmål eller for korte til at citere.');
+
+    box.replaceChildren(
+      el('div', { class: 'hero' }, pic, el('div', {},
+        el('div', { class: 'crumbs' }, p.category.replace(/>/g, '›')),
+        el('h1', {}, p.name),
+        el('p', { class: 'by' }, `${p.brand}, varenummer ${p.sku}`),
+        rating)),
+      el('div', { class: 'facts' },
+        el('div', {},
+          el('h3', {}, `Stemning i ${p.ugc_count} ${p.ugc_count === 1 ? 'kommentar' : 'kommentarer'}`),
+          el('div', { class: 'sbar', role: 'img', 'aria-label': `${s.positive} positive, ${s.neutral} neutrale, ${s.negative} negative` },
+            s.positive ? el('i', { style: `flex:${s.positive};background:var(--pine)` }) : null,
+            s.neutral ? el('i', { style: `flex:${s.neutral};background:#a9b5ae` }) : null,
+            s.negative ? el('i', { style: `flex:${s.negative};background:#c8553d` }) : null),
+          el('div', { class: 'skey' },
+            el('span', {}, el('b', { style: 'background:var(--pine)' }), `${s.positive} positive`),
+            el('span', {}, el('b', { style: 'background:#a9b5ae' }), `${s.neutral} neutrale`),
+            el('span', {}, el('b', { style: 'background:#c8553d' }), `${s.negative} negative`))),
+        el('div', {},
+          el('h3', {}, 'Kunderne nævner'),
+          el('div', { class: 'chips' }, p.top_topics.map((t) => el('span', {}, t))))),
+      el('section', { class: 'says' }, el('h2', {}, 'Det siger kunderne'), quotes));
+  }
+
+  // ---------- behind the scenes ----------
+  const counts = () => Object.fromEntries(ROUTES.map((r) => [r.key, results.filter((x) => x.route === r.key).length]));
+
+  function renderBoard() {
+    const c = counts();
+    document.getElementById('bts-title').textContent = `${results.length} kommentarer, sorteret`;
+    document.getElementById('legend').replaceChildren(...ROUTES.filter((r) => c[r.key]).map((r) =>
+      el('button', { type: 'button', 'aria-pressed': String(!hidden.has(r.key)), onclick: () => { hidden.has(r.key) ? hidden.delete(r.key) : hidden.add(r.key); renderBoard(); } },
+        el('b', { style: `background:${r.color}` }), r.label, el('span', { class: 'n' }, c[r.key]))));
+    document.getElementById('tiles').replaceChildren(...results.map((x) => {
+      const r = R[x.route] || R.error;
+      return el('button', {
+        type: 'button', class: 'tile' + (hidden.has(x.route) ? ' dim' : ''),
+        style: `background:${r.color}`, 'aria-pressed': String(x.id === selected),
+        'aria-label': `${x.id}: ${r.long}`, title: `${x.id}: ${r.label}`,
+        onclick: () => select(x.id),
+      }, x.id.replace('ugc_', ''), x.contains_pii ? el('span', { class: 'pii', 'aria-hidden': 'true' }) : null);
+    }));
+  }
+
+  function select(id) {
+    selected = id;
+    renderBoard();
+    renderDetail();
+    if (window.matchMedia('(max-width: 900px)').matches) document.getElementById('detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function renderDetail() {
+    const box = document.getElementById('detail');
+    const x = results.find((r) => r.id === selected);
+    if (!x) { box.replaceChildren(el('h2', {}, 'Vælg en kommentar'), el('p', { class: 'meta' }, 'Klik på en firkant for at se tekst, produktmatch, moderation og citat.')); return; }
+    const r = R[x.route] || R.error;
+    const rows = [];
+    const add = (k, ...v) => rows.push(el('dt', {}, k), el('dd', {}, ...v));
+    if (x.route === 'error') add('Problem', x.problems);
+    else {
+      add('Produkt', x.matched_sku ? `${names[x.matched_sku] || ''} (${x.matched_sku})` : 'Intet produkt');
+      add('Sikkerhed', `${Math.round((x.match_confidence || 0) * 100)} %`, el('span', { class: 'conf' }, el('i', { style: `width:${Math.round((x.match_confidence || 0) * 100)}%` })));
+      add('Begrundelse', el('span', { lang: 'en' }, x.match_reason));
+      add('Stemning', SENT[x.sentiment] || x.sentiment);
+      add('Moderation', MOD[x.moderation] || x.moderation, x.moderation_reason ? el('span', { lang: 'en' }, `: ${x.moderation_reason}`) : null);
+      add('Persondata', x.contains_pii ? (x.pii_detected_by_regex ? 'Ja, fundet af regex' : 'Ja, fundet af Claude') : 'Nej');
+      if (x.needs_customer_service) add('Kundeservice', el('span', { lang: 'en' }, x.cs_reason));
+      add('Citat', x.suggested_quote ? `»${x.suggested_quote}« (score ${num(x.quote_score, 2)})` : 'Intet citat');
+      if (x.guardrails && x.guardrails.length) add('Rettet af kode', el('span', { class: 'guard', lang: 'en' }, x.guardrails.join('; ')));
+    }
+    box.replaceChildren(
+      el('h2', {}, x.id),
+      el('p', { class: 'meta' }, `${SOURCE[x.source] || x.source} fra ${x.author_handle}, ${x.created_at}`),
+      el('div', { class: 'badge' }, el('b', { style: `background:${r.color}` }), r.long),
+      el('blockquote', {}, x.text),
+      el('dl', {}, rows));
+  }
+
+  function renderQueues() {
+    const idBtn = (id) => el('td', { class: 'id' }, el('button', { type: 'button', onclick: () => select(id) }, id));
+    document.getElementById('cs-rows').replaceChildren(...results.filter((x) => x.route === 'customer_service').map((x) =>
+      el('tr', {}, idBtn(x.id), el('td', {}, x.matched_sku ? (names[x.matched_sku] || x.matched_sku) : 'Ukendt'), el('td', { lang: 'en' }, x.cs_reason))));
+    document.getElementById('mod-rows').replaceChildren(...results.filter((x) => x.queue === 'moderation').map((x) =>
+      el('tr', {}, idBtn(x.id), el('td', {}, (R[x.route] || R.error).label),
+        el('td', { lang: 'en' }, x.route === 'needs_human_match' ? x.match_reason : x.route === 'error' ? x.problems : x.moderation_reason))));
+  }
+
+  // ---------- routing between views ----------
+  function show() {
+    const view = location.hash === '#bag-kulisserne' ? 'bag-kulisserne' : 'produkter';
+    for (const v of ['produkter', 'bag-kulisserne']) document.getElementById('view-' + v).hidden = v !== view;
+    document.querySelectorAll('nav a').forEach((a) => {
+      if (a.dataset.view === view) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+  }
+
+  async function load() {
+    try {
+      const [p, r, c] = await Promise.all(['product_ugc.json', 'ugc_results.json', 'products.csv'].map((f) =>
+        fetch(f).then((res) => { if (!res.ok) throw new Error(`${f}: ${res.status}`); return f.endsWith('.csv') ? res.text() : res.json(); })));
+      products = p; results = [...r].sort((a, b) => a.id.localeCompare(b.id));
+      names = Object.fromEntries(parseCsv(c).map((x) => [x.sku, x.name]));
+      current = products[0] && products[0].sku;
+      document.getElementById('status').remove();
+      renderList(); renderProduct(); renderBoard(); renderDetail(); renderQueues(); show();
+      const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+      const repo = location.pathname.split('/').filter(Boolean)[0];
+      if (m && repo) document.getElementById('site-footer').append(' ', el('a', { href: `https://github.com/${m[1]}/${repo}` }, 'Se koden og data på GitHub'), '.');
+    } catch (e) {
+      document.getElementById('status').textContent = `Kunne ikke hente data (${e.message}). Siden skal åbnes via en webserver, f.eks. GitHub Pages, og product_ugc.json, ugc_results.json og products.csv skal ligge i samme mappe.`;
+    }
+  }
+  window.addEventListener('hashchange', show);
+  load();
+})();
+</script>
+</body>
+</html>
