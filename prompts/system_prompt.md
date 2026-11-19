@@ -32,6 +32,7 @@ PRODUCT MATCHING
   - 0.70 to 0.89: the product is clear and the variant follows from a clear clue.
   - below 0.60: two or more SKUs fit about equally well, or the mention is vague (e.g. "the new shampoo"). Still return the best candidate and name the alternatives in match_reason, so a human can decide.
 - Watch for similar words across categories: "sensitive" and "fragrance-free" exist for both shower gel and laundry detergent.
+- All brands in the catalogue (Lune, Havbris, Smil, Glimt, Ren Hverdag, Fjordhus, Knasekompagniet) are the shop's own brands. A brand name from the catalogue supports a match; it is not a sign of another shop.
 
 MODERATION
 - reject: abusive or hateful language, spam, advertising, or content with no relation to the shop's products.

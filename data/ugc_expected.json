@@ -470,7 +470,8 @@
       "HB-10234"
     ],
     "acceptable_routes": [
-      "review"
+      "review",
+      "customer_service"
     ],
     "seeded": [
       "pii_phone"

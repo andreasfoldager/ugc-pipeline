@@ -118,7 +118,7 @@ UGC = [
     ("ugc_039", "qa", "da", "Jeg bestilte to dunke vaskemiddel for 12 dage siden og har stadig ikke fået noget. Ordrenummer 48213.", None, "@venter_stadig", "2026-10-23", False, [None, "HB-20130", "HB-20131"], [CS], ["cs_missing_order"]),
     ("ugc_040", "review", "sv", "Fick en allergisk reaktion av handkrämen, svullna fingrar. Har slutat använda den.", 1, "@svullen_sara", "2026-10-23", False, ["HB-10402"], [CS], ["cs_reaction"]),
     ("ugc_041", "review", "da", "Super håndcreme, mine knoer er ikke længere revnede! Skriv til mig på mette.fiktiv@example.com hvis du vil høre mere om min hudpleje.", 5, "@hudpleje_mette", "2026-10-24", False, ["HB-10402"], [RV], ["pii_email"]),
-    ("ugc_042", "qa", "da", "Hvornår kommer den store shower gel sensitive på lager igen? Ring på 21 34 56 78", None, "@lagerjagt", "2026-10-24", False, ["HB-10234"], [RV], ["pii_phone"]),
+    ("ugc_042", "qa", "da", "Hvornår kommer den store shower gel sensitive på lager igen? Ring på 21 34 56 78", None, "@lagerjagt", "2026-10-24", False, ["HB-10234"], [RV, CS], ["pii_phone"]),
     ("ugc_043", "review", "no", "Fint oppvaskmiddel med sitron. Kontakt meg på +47 912 34 567 så selger jeg deg det billigere.", 4, "@billigsalg", "2026-10-25", False, ["HB-20110"], [RV, RJ], ["pii_phone", "spam"]),
     ("ugc_044", "review", "en", "My order never arrived and nobody answers. Email me at j.testesen@example.org, order 55190.", 1, "@where_is_it", "2026-10-25", False, [None], [CS], ["pii_email", "cs_missing_order"]),
     ("ugc_045", "review", "da", "Gode chips med havsalt! Jeg bor på Kastanjevej 12, 8660 Skanderborg, hvis nogen vil bytte lakrids 😂", 4, "@chipsbytter", "2026-10-26", False, ["HB-40110"], [RV], ["pii_address_no_regex"]),

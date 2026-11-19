@@ -33,15 +33,16 @@ function parseCsv(text) {
 const catalogue = parseCsv(csvText);
 
 // Compact catalogue for the prompt: only what matching needs.
+// Brand is included so Claude knows e.g. "Fjordhus" is one of the shop's own brands.
 const catalogueBlock = catalogue
-  .map((p) => `${p.sku} | ${p.name} | ${p.variant} | ${p.keywords}`)
+  .map((p) => `${p.sku} | ${p.brand} | ${p.name} | ${p.variant} | ${p.keywords}`)
   .join('\n');
 
 const SYSTEM_PROMPT = __SYSTEM_PROMPT__;
 
 // __ITEMS__ is replaced with the batch. The validator reuses this template for retries.
 const userTemplate = [
-  'Product catalogue (sku | name | variant | keywords):',
+  'Product catalogue (sku | brand | name | variant | keywords):',
   catalogueBlock,
   '',
   'UGC items to process (JSON array):',

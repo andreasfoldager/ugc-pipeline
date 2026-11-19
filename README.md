@@ -84,9 +84,18 @@ node tools/mock_server.js 8787
 
 The workflow has been run end to end against this mock in n8n 1.123: 60/60 items, retry path triggered, all guardrails fired, and `check_run.py` passes. `test/mock_output/` shows what that run produced. **Those outputs come from the mock, not from Claude.** Use a real run for the video.
 
+## Showcase site
+
+`docs/` is a small static site that shows a run's results. It has a mock product page with the approved quotes for each product, and a "behind the scenes" view: all 60 items as tiles coloured by route (click one to see Claude's decision), plus the customer-service and moderation queues.
+
+It reads `product_ugc.json`, `ugc_results.json` and `products.csv` from the same folder. To show a new run, replace the two JSON files with the ones you downloaded from n8n.
+
+To host it on GitHub Pages: go to repo **Settings → Pages**. Under Source, choose **Deploy from a branch**, then branch `main`, folder `/docs`, and click Save. After a minute it's live at `https://<you>.github.io/ugc-pipeline/`.
+
 ## Repo layout
 
 ```
+docs/            showcase site (GitHub Pages)
 data/            products.csv, ugc.json, ugc_expected.json (ground truth for the checker)
 n8n/workflow.json   the importable workflow (generated)
 n8n/code/        source of every Code node
