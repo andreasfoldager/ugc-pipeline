@@ -12,7 +12,7 @@
 
 
 
-Retailers collect lots of user-generated content (reviews, social captions, Q&A), but most of it never reaches the product page in a useful form. This n8n workflow takes raw UGC, works out which product each piece is about, judges sentiment and quality, flags what needs moderation or customer-service follow-up, and outputs the best quotes per product, ready for the webshop.
+Retailers collect lots of user-generated content (reviews, social captions, Q&A), but most of it never reaches the product page in a useful form. This n8n workflow takes raw comment data, works out which product each piece is about, judges sentiment and quality, flags what needs moderation or customer-service follow-up, and outputs the best quotes per product, ready for the webshop.
 
 All data is sample data, its brands, products, customers, emails and phone numbers.
 
